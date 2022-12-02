@@ -1,0 +1,212 @@
+/* La expliacion de codigo es por linea nueva usada es decir que no explicare 2 o mas veces una 
+misma funcion a menos de que sea necesario o sea complementada con otra creando una "nueva" */
+
+
+*{ /* Modificacion para el formato de la pagina */
+margin: 0px;/* no tendra margenes */
+padding: 0px;/* no tendra padding por lo que todo estara pegado a los lados por defecto */
+} 
+
+body{ /* Modificacion para el cuerpo de la página */
+	background-image: url('img/fondo.jpg');/* obtencion de una imagen para agregarla como fondo del cuerpo */
+	background-repeat: no-repeat;/* evitar que la imagen se repita en caso de que sea muy pequeña */
+	background-position: center;/* la imagen de fondo siempre estara centrada */
+	background-size: cover;/* La imagen cubrira todo el espacio del cuerpo independientemente de su forma */
+	text-align: center;/* el texto agregado en el cuerpo siempre se encontrara alineado en el centro  */
+	font-family: sans-serif ;/* asignacion de la fuente para el texto */
+}
+
+#Banner{/* estilo para id Banner */
+	z-index: 5;/* se mostrara hasta arriba de todo */
+	position: fixed;/* se mantendra estatico en la pagina, siempre estara presente 
+	para dar identidad a nuestra pagina con logotipo y nombre de la misma */
+	display: block;/* Es la forma en la que se mostrara nuestro banner de manera que se encontrara como un bloque  */
+	width: 100%;/* el ancho de la seccion ocupara el 100% de la pantalla */
+}
+
+nav ul {/* listado de navegación */
+/*Se mostrara enfrente de todo, con una posicion fija de manera que no desaparezca, tendra un fondo de color , ancho 100%
+el texto estara alineado al centro */	
+z-index: 5; 
+position: fixed;
+background-color:#84E5B8 ;
+width: 100%;
+list-style-type:none ; /*No tendra un diseño asignado de lista para que se mantenga neutro*/
+text-align: center; 
+top: 120px; /*tendra una separacion con respecto al borde de arriba*/
+}
+
+nav li{/* forma en la que se acomodaran los botones en el menu de navegacion */
+	display: inline-grid; /* forma en la que se mostrara la barra de navegacion, 
+						  se mostrara de manera horizontal una tras de otra */
+}
+
+nav a {/* formato para texto de barra de navegacion */
+	/*tendra un texto de color asignado, con un tamaño de 20px, no tendra decoracion 
+	tendra un padding para que no este pegado a las orillas y por ultimo un ancho asignado*/
+	text-decoration: none;
+	color: #8489E5;
+	font-size: 20px;
+	padding: 10px;
+	width: 150px;
+}
+
+nav li:hover {/* Nos brinda un efecto en la barra de navegacion al pasar el mouse por encima */
+	background-image: url('img/fondoanim.gif'); /*obtencion de fondo para el boton el cual es un gif importado con img*/
+}
+	
+#galeria{/* formato que llevara la seccion galeria */
+/*ancho definido para cada una de las imagenes*/
+	width: 800px;
+	display: inline-flex;/* distribucion de las mismas de manera vertical */
+	
+	
+
+}	
+#galeria:hover{ /* nos permite realizar un oscurecimiento de imagen al momento de posar el mouse encima */
+	opacity: 80%; /* opacidad de la animacion al 10% */
+}
+
+#MenuP{/* forma para Menuprincipal */
+|	/* tendra una imagen de fondo,centrada que no se repetira y ocupara toda el area de menuP, 
+	tendra un ancho asignado no usara el total, su texto estara alineado al centro y su posicion
+	sera relativa teniendo un espaciado de arriba de 200px y de la izquierda de 100px, tendra un color blanco para contrastar*/
+	background-image: url('img/Captura.PNG'); 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 80%;
+	text-align: center;
+	position: relative;
+	top: 200px;
+	left: 100px;
+	right: 0px;
+	color: white;
+}
+
+#MenuPM{/* Formato menu promociones */
+	/* tendra una imagen de fondo, con posicion central que no se repetira, la seccion tendra un ancho total y altura de 60px,
+	su texto estara centrado y su tamaño sera de 25px con un fondo de color asignado */
+	background-image: url('img/fondoanim.gif');
+	background-position: center;
+	background-repeat: repeat;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	font-size: 25px;
+	position: relative;
+	color: white;
+	background-color: #70FF8F ;
+	
+
+}
+caption{/* Modificacion para funcion caption que es el nombre de nuetras tablas */
+/* tendra fondo de color y un color de letras asignado */
+background-color: #8470FF;
+background-size: auto;
+color: #70FF8F;
+}
+
+	
+table{/* Modificacion para las tablas */
+/* tendran un espaciado padding, alineacion de texto central y un ancho total */
+padding: 20px;
+text-align: center;
+width: 100%;
+}
+
+th{/* Modificacion para el encabezado de la tabla */
+	/* obtendra un padding para centrar el texto sin que este muy pegado a los bordes */
+	padding: 20px;
+}
+
+#MenuC{/* Formato para menu comida */
+	/* tendra un fondo de color de tamaño automatico, color y tamaño de texto asignado, posicion relativa pegada hasta el tope
+	de arriba, contara con un padding  */
+	padding: 20px;
+	background-color: #8470FF;
+	background-size: auto;
+	color: #70FF8F;
+position: relative;
+top: 0px;
+font-size: 50px;
+}
+
+#espacio{/* creacion de un espacio especifico para dar orden */
+	/* este nos ayudara para crear espacio donde sea necesario, el cual estara relativo con los demas objetos
+	ocupara un espacio de 158px */
+	position: relative;
+	top: 0px;
+	height: 158px;
+
+}
+
+#letra{/* formato para los textos de la pagina */
+	/* el texto estara centrado, con un tamaño asignado, una posicion relativa y alto y ancho asignados,
+	color y fondo asignados */
+	position: relative;
+	text-align: center;
+	font-size: 50px;
+	height: 100%;
+	width: 100%;
+	background-color: #9786F5FF;
+	background-size: auto;
+	color: #70FF8F;	
+}
+
+h1{/* Modificacion para Titulo nivel 1 */
+	/* estara centrado, con un color asignado, padding asignado */
+	text-align: center;
+	background-color: #9A5AFF;
+	color:#5AFFCA;
+	padding: 20px;
+	position: relative;
+	top: 0px;
+}
+
+h2{/* Modificacion para Titulo de nivel 2 */
+	/* estara centrado, con un color asignado, padding y posicion relativa */
+	text-align: center;
+	background-color: #9A5AFF;
+	color:#5AFFCA;
+	padding: 20px;
+	position: relative;
+	top: 0px;
+}
+
+
+#foto{/* formato para las imagenes */
+/* tendran un marco de 5px, con color asignado, todas las imagenes tendran un tamaño de 270px */
+border: solid 5px #5AFFCA ;
+width: 270px;
+height: 270px;
+border-radius: 60px;/* nos ayuda a crear esquinas redondeadas o recortes */
+object-fit: cover; /* ayuda a que la imagen se mantenga centrada y no se distorcione  */
+}
+
+#foto:hover{ /* Efecto para imagenes al posar el mouse encima */
+	opacity: 80%; /* la imagen se oscurecera un 20% */
+}
+
+
+footer {/* Modificacion para el Pie de pagina */
+	/*Estara en una posicion fijada de manera que siempre se mantendra en su lugar y nos seguira, */
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #8489E5 ;
+	color: #F82DE6;
+	
+}
+footer p{/* Modificacion para texto en pie de pagina */
+	/* Estara centrado con un padding asignado */
+	text-align: center;
+	padding: 15px;
+}
+
+audio{ /* posicion de reproduccion de audio */
+	/* se encontrara relativa al formato hasta arriba */
+	position: relative;
+	top: 0;
+}

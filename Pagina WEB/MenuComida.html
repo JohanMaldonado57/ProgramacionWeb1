@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!-- La expliacion de codigo es por linea nueva usada es decir que no explicare 2 o mas veces una 
+misma funcion a menos de que sea necesario o sea complementada con otra creando una "nueva" -->
+<html>
+<head>
+		<title>MENÚ</title>
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="index.html">
+	<link rel="stylesheet" type="text/css" href="Promociones.html">
+	<link rel="stylesheet" type="text/css" href="Galeria.html">
+
+</head>
+<body>
+	<section id="Banner"><img src="img/pz.png" height="130" width="100%"></section>
+	<nav>
+		<ul>
+			<li><a href="index.html">Menú Principal</a></li>
+			<li><a href="#platillosprincipales">Platillos</a></li>
+			<li><a href="#beb">Bebidas</a></li>
+			<li><a href="#postres">Postres</a></li>
+			<li><a href="#paquetes">Paquetes</a></li>
+			
+			<li><a href="Galeria.html">Galería</a></li>
+			<li><a href="Promociones.html">Promociones</a></li>
+
+		</ul>
+	</nav>
+	<p id="espacio">.</p>
+
+
+		<div>
+			<h1>Menú Comida</h1> <!-- Titulo nivel 1 para la pagina -->
+		</div>
+		<br><br><br> <!-- saltos -->
+	<div >
+		<table >  <!-- Funcion para crear una nueva tabla -->
+			<!-- seccion para platillos principales -->
+			<caption id="platillosprincipales"><h2>Platillos Principales</h2></caption>  <!-- Nombre de la tabla y titulo de nivel 2 -->
+			<tr id="MenuC"> <!-- definicion de las filas afectadas por id="menuC" -->
+				<th>Ilustracion</th> <!-- encabezado de la tabla asignando el nombre las filas -->
+				<th>Platillo</th>
+				<th>Tamaño</th>
+				<th>Precio</th>
+
+			</tr>
+			<!-- Utilice el formato de tablas individuales ya que al momento de unificarlas el numero de argumentos necesarios seria muy extenso ademas de que me causaba errores -->
+			<tr id="letra"> <!-- implementacion a las filas creadas afectado ahora por id="letra" -->
+				<th><img id="foto" src="img/chilaquil.jpg"></th>  <!-- contenido de la tabla con una imagen  -->
+				<th>Chilaquiles</th>	<!-- contenido de la tabla -->
+				<th>Grandes</th>
+				<th>$45°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/HuevoM.jpg"></th>
+				<th>Huevo a la Mexicana</th>
+				<th>Mediano</th>
+				<th>$25°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/HuevoJ.jpg "></th>
+				<th>Huevo con Jamon </th>
+				<th>Mediano</th>
+				<th>$25°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/Mollete.jpg "></th>
+				<th>Molletes </th>
+				<th>Mediano </th>
+				<th>$25°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/pozole.jpg "></th>
+				<th>Pozole</th>
+				<th>Grande | Chico </th>
+				<th>$70°°  | $54°°</th>
+			</tr>
+
+			<tr id="letra"> 
+				<th><img id="foto" src="img/Flautas.jpg "></th>
+				<th>Flautas </th>
+				<th>Grande </th>
+				<th>$45°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/Tostada.jpg "></th>
+				<th>Tostadas </th>
+				<th>Chico </th>
+				<th>$20°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/Sopes.jpg "></th>
+				<th>Sopes </th>
+				<th>Chico </th>
+				<th>$15°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/Enchilada.jpg "></th>
+				<th>Enchiladas </th>
+				<th>Grande | Mediano </th>
+				<th>$54°°  | $34°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/quesadilla.jpg "></th>
+				<th>Quesadillas </th>
+				<th>Chico </th>
+				<th>$20°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/taco.jpg "></th>
+				<th>Tacos </th>
+				<th>Mediana</th>
+				<th>$30°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/Pizza.jpg"></th>
+				<th>Pizza </th>
+				<th>Familiar | Grande | Mediana </th>
+				<th>$240°° | $140°° | $98°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/sandwich.jpg "></th>
+				<th>Sandwich </th>
+				<th>Chico</th>
+				<th>$25°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/ham.jpg "></th>
+				<th>Hamburguesa </th>
+				<th>Mediano</th>
+				<th>$35°°</th>
+			</tr>
+
+			<tr id="letra">
+				<th><img id="foto" src="img/hot.jpg "></th>
+				<th>HotDogs</th>
+				<th>Mediano</th>
+				<th>$25°°</th>
+			</tr>
+		
+
+		</table>
+	</div> <!-- fin de seccion para platillos principales-->
+
+
+		<div> <!--Inicio seccion de BEBIDAS -->
+		<table >
+			<caption ><h2 id="beb"> BEBIDAS </h2></caption>	
+			
+				<tr id="MenuC">
+					<td>Ilustracion</td>
+					<td>Bebida</td>
+					<td>Tamaños</td>
+					<td>Precios</td>
+				</tr>
+				<tr id="letra">
+					<th> <img id="foto" src="img/sprite.jpg"></th>
+					<th>Sprite</th>
+					<th>600 ml</th>
+					<th>$22°°</th>
+				</tr>
+
+				<tr id="letra">
+					<th> <img id="foto" src="img/coca.jpg"></th>
+					<th>Coca Cola</th>
+					<th>600 ml</th>
+					<th>$25°°</th>
+				</tr>
+
+				<tr id="letra">
+					<th> <img id="foto" src="img/sidral.jpg"></th>
+					<th>Sidral Mundet</th>
+					<th>600 ml</th>
+					<th>$18°°</th>
+				</tr>
+
+				<tr id="letra">
+					<th> <img id="foto" src="img/agua.jpg"></th>
+					<th>Agua Embotellada</th>
+					<th>500 ml</th>
+					<th>$15°°</th>
+				</tr>
+
+				<tr id="letra">
+					<th> <img id="foto" src="img/horchata.jpg"></th>
+					<th>Agua de Horchata</th>
+					<th>500 ml</th>
+					<th>$20°°</th>
+				</tr>
+
+				<tr id="letra">
+					<th> <img id="foto" src="img/jamaica.png"></th>
+					<th>Agua de Jamaica</th>
+					<th>500 ml</th>
+					<th>$20°°</th>
+				</tr>
+
+				<tr id="letra">
+					<th> <img id="foto" src="img/limon.jpg"></th>
+					<th>Agua de Limón</th>
+					<th>500 ml</th>
+					<th>$20°°</th>
+				</tr>
+
+				<tr id="letra">
+					<th> <img id="foto" src="img/fresa.jpg"></th>
+					<th>Agua de Fresa</th>
+					<th>500 ml</th>
+					<th>$20°°</th>
+				</tr>
+
+				<tr id="letra">
+					<th> <img id="foto" src="img/pina.jpg"></th>
+					<th>Agua de Piña</th>
+					<th>500 ml</th>
+					<th>$22°°</th>
+				</tr>
+
+				<tr id="letra">
+					<th> <img id="foto" src="img/cerveza.jpg"></th>
+					<th>Cerveza</th>
+					<th>650 ml</th>
+					<th>$35°°</th>
+				</tr>
+
+				<tr id="letra">
+					<th> <img id="foto" src="img/te.jpg"></th>
+					<th>Té</th>
+					<th>250 ml</th>
+					<th>$12°°</th>
+				</tr>
+
+				<tr id="letra">
+					<th> <img id="foto" src="img/cafe.jpg"></th>
+					<th>Café</th>
+					<th>250 ml</th>
+					<th>$20°°</th>
+				</tr>
+
+				<tr id="letra">
+					<th> <img id="foto" src="img/chocolate.jpg"></th>
+					<th>Chocolate</th>
+					<th>300 ml</th>
+					<th>$25°°</th>
+				</tr>
+
+				
+
+		</table> 
+	</div><!--Fin de seccion BEBIDAS -->
+	<div><!-- incio seccion de postres-->
+
+		<table >
+			<caption id="postres"><h2> POSTRES </h2></caption>	
+				<tr id="MenuC">
+					<td>Ilustracion</td>
+					<td>Bebida</td>
+					<td>Tamaños</td>
+					<td>Precios</td>
+				</tr>
+				<tr id="letra">
+					<th> <img id="foto" src="img/pay.jfif"></th>
+					<th>Pay con Fresa</th>
+					<th>pequeño</th>
+					<th>$22°°</th>
+				</tr>
+				<tr id="letra">
+					<th> <img id="foto" src="img/helado.jfif"></th>
+					<th>Helado</th>
+					<th>pequeño</th>
+					<th>$17°°</th>
+				</tr>
+				<tr id="letra">
+					<th> <img id="foto" src="img/pastel.jpeg"></th>
+					<th>Pastel</th>
+					<th>pequeño</th>
+					<th>$25°°</th>
+				</tr>
+				<tr id="letra">
+					<th> <img id="foto" src="img/churros.jfif"></th>
+					<th>Churros</th>
+					<th>pequeño</th>
+					<th>$15°°</th>
+				</tr>
+				<tr id="letra">
+					<th> <img id="foto" src="img/gelatina.jfif"></th>
+					<th>Gelatina</th>
+					<th>mediano</th>
+					<th>$29°°</th>
+				</tr>
+				<tr id="letra">
+					<th> <img id="foto" src="img/pan.jfif"></th>
+					<th>Pan de Dulce</th>
+					<th>pequeño</th>
+					<th>$15°°</th>
+				</tr>
+				<tr id="letra">
+					<th> <img id="foto" src="img/flan.jfif"></th>
+					<th>Flan</th>
+					<th>pequeño</th>
+					<th>$25°°</th>
+				</tr>
+			</table>
+		</div> <!-- Fin seccion de postres-->
+
+		<div> <!-- Inicio seccion de paquetes -->
+			<h1 id="paquetes">PAQUETES</h1> 
+		</div>
+		<br><br><br>
+	<div >
+		<table>
+			<caption><h2>Paquete Familiar 1</h2></caption>
+			<tr id="MenuPM"  >
+				<th>Platillos</th>
+				<th>Descripción</th>
+			</tr>
+			<tr id="letra">
+				<th><img id="foto" src="img/Flautas.jpg"></th>
+				<th>Este paquete incluye un platillo principal, una bebida y un postre para cada persona en la mesa </th>
+			</tr>
+		</table>
+
+		<table>
+			<caption><h2>Paquete Familiar 2</h2></caption>
+			<tr id="MenuPM"  >
+				<th>Platillos</th>
+				<th>Descripción</th>
+			</tr>
+			<tr id="letra">
+				<th><img id="foto" src="img/Pizza.jpg"></th>
+				<th>Este paquete incluye una pizza familiar, un refresco de 2L y 1 postre grande </th>
+			</tr>
+		</table>
+		<table>
+			<caption><h2>Paquete Pareja</h2></caption>
+			<tr id="MenuPM"  >
+				<th>Platillos</th>
+				<th>Descripción</th>
+			</tr>
+			<tr id="letra">
+				<th><img id="foto" src="img/ham.jpg"></th>
+				<th>Este paquete incluye Dos hamburguesas con papas a la francesa y dos bebidas  </th>
+			</tr>
+		</table>
+		<table>
+			<caption><h2>Paquete Desayuno </h2></caption>
+			<tr id="MenuPM"  >
+				<th>Platillos</th>
+				<th>Descripción</th>
+			</tr>
+			<tr id="letra">
+				<th><img id="foto" src="img/HuevoJ.jpg"></th>
+				<th>Este paquete te incluye un platillo para desayuno, un cafe o chocolate y un pan de dulce </th>
+			</tr>
+		</table>
+		<table>
+			<caption><h2>Paquete Fin de semana</h2></caption>
+			<tr id="MenuPM"  >
+				<th>Platillos</th>
+				<th>Descripción</th>
+			</tr>
+			<tr id="letra">
+				<th><img id="foto" src="img/cerveza.jpg"></th>
+				<th>Este paquete incluye una pizza y cerveza. Puedes pedir cualquier tamaño </th>
+			</tr>
+		</table>
+</div><!-- fin seccion de paquetes -->
+<footer>
+		<p>Derechos a Maldonado Arrieta Johan Uriel | Programacion web 1 | grupo 1507 </p>
+	</footer>	
+</body>
+</html>
